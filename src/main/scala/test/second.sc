@@ -46,3 +46,6 @@ val partition = test_list.partition(s=> s.roll>2) // will be give all partition 
 
 val part1 = partition._1 // to get first part of above partition
 val part2  = partition._2  // to get second part of above partition
+
+
+var ls = {var a:Int=2;var b:Int=8;a+b}
