@@ -1,4 +1,4 @@
-package test
+package myCode
 
 object first {
   def main(args : Array[String]): Unit = {

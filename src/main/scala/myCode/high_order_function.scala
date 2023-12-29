@@ -1,4 +1,4 @@
-package test
+package myCode
 
 object high_order_function {
   def math(x:Double, y:Double, f:(Double, Double)=>Double) : Double = f(x,y)

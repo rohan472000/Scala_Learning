@@ -1,4 +1,4 @@
-package test
+package myCode
 
 object function {
  def add(x:Int, y:Int):Int = {
