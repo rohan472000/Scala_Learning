@@ -27,3 +27,23 @@ object second{
     println("res1 is : "+res1)
   }
 }
+
+object third{
+  def main(args: Array[String]): Unit = {
+    var x = 10
+
+    // while loop
+    while (x <20){
+      println(x=x+1)
+      x += 1
+    }
+
+    // for loop
+    for (i <- 1 to 5) println("i :"+i)
+    for (i <- 1.to(5)) println("i : "+i) // "." will access "to" as a function
+    for (i <- 1.until(5)) println("i : "+i) // use of until
+    for (i <- 1 until 5) println("i : "+i) // use of until as normal english word without "."
+    // for loop for two variables
+    for (i <- 1 to 5; j <- 5 to 8) println(s"i is : $i and j is : $j")
+  }
+}
