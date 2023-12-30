@@ -5,6 +5,7 @@ object lazy_eval {
     println("method1")
     println(n)
   }
+  // for lazy evaluation
   def method2(n: => Int): Unit = {
     println("method2")
     println(n)
@@ -16,7 +17,11 @@ object lazy_eval {
        a+b
      }
 
-    method1(add(3,4))
-    method2(add(3,4))
+    method1(add(3,4)) // add
+                      //    method1
+                      //    7
+    method2(add(3,4)) // method2
+                      //      add
+                      //    7
   }
 }
